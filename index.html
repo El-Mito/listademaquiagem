@@ -3,105 +3,166 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Kit de Maquiagem Profissional</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <title>Lista de Fornecedores de Maquiagem 2025</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
   <style>
-    body {
+    * {
       margin: 0;
-      font-family: 'Montserrat', sans-serif;
-      background: #fff;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      line-height: 1.6;
+      background-color: #fff;
       color: #333;
     }
     header {
-      background: linear-gradient(to right, #ff6f91, #ff9671);
-      color: white;
-      padding: 2rem;
+      background: url('https://images.unsplash.com/photo-1596464716121-2ea6f525e6b0?auto=format&fit=crop&w=1920&q=80') no-repeat center/cover;
+      padding: 80px 20px;
       text-align: center;
+      color: white;
     }
     header h1 {
-      margin: 0;
       font-size: 2.5rem;
+      margin-bottom: 20px;
+      text-shadow: 2px 2px 5px #000;
+    }
+    header p {
+      font-size: 1.2rem;
+      text-shadow: 1px 1px 3px #000;
     }
     .container {
-      max-width: 1200px;
+      max-width: 960px;
       margin: auto;
-      padding: 2rem;
+      padding: 40px 20px;
     }
-    .product {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 2rem;
-      align-items: center;
-      justify-content: center;
-    }
-    .product img {
-      max-width: 400px;
+    .highlight {
+      background: #ffe8f0;
+      padding: 20px;
       border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      margin-bottom: 30px;
+      text-align: center;
     }
-    .details {
-      max-width: 500px;
+    .highlight h2 {
+      font-size: 1.8rem;
+      color: #e6007e;
+      margin-bottom: 10px;
     }
-    .details h2 {
-      font-size: 2rem;
-      margin-bottom: 1rem;
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
     }
-    .details p {
-      font-size: 1.1rem;
-      line-height: 1.6;
+    .feature {
+      background-color: #fafafa;
+      padding: 20px;
+      border-radius: 10px;
+      border: 1px solid #eee;
+      text-align: center;
     }
-    .price {
-      font-size: 1.5rem;
-      color: #ff6f91;
-      margin: 1rem 0;
+    .feature h3 {
+      color: #e6007e;
+      margin-bottom: 10px;
     }
-    .btn {
-      background: #ff6f91;
+    .cta {
+      background: #e6007e;
       color: white;
-      padding: 1rem 2rem;
-      border: none;
-      border-radius: 5px;
-      font-size: 1rem;
-      cursor: pointer;
-      transition: background 0.3s ease;
+      padding: 20px 30px;
+      text-align: center;
+      border-radius: 10px;
+      font-size: 1.4rem;
+      font-weight: bold;
+      text-decoration: none;
+      display: inline-block;
+      margin: 30px auto;
+      transition: transform 0.3s ease;
     }
-    .btn:hover {
-      background: #ff4e7a;
+    .cta:hover {
+      background: #c4006a;
+      transform: scale(1.05);
+    }
+    .testimonials {
+      background: #fdf4f8;
+      padding: 40px 20px;
+      border-radius: 10px;
+      margin-top: 40px;
+    }
+    .testimonial {
+      margin-bottom: 20px;
+    }
+    .testimonial p {
+      font-style: italic;
     }
     footer {
+      background: #222;
+      color: #bbb;
       text-align: center;
-      padding: 2rem;
-      background: #f7f7f7;
-      font-size: 0.9rem;
-      color: #777;
+      padding: 20px;
+      margin-top: 40px;
     }
-    @media (max-width: 768px) {
-      .product {
-        flex-direction: column;
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
       }
     }
   </style>
 </head>
 <body>
+
   <header>
-    <h1>Kit de Maquiagem Profissional</h1>
-    <p>Transforme seu visual com qualidade e estilo</p>
+    <h1>🔥 Descubra os Melhores Fornecedores de Maquiagem do Brasil</h1>
+    <p>Comece hoje a sua loja com os melhores preços e produtos do mercado!</p>
   </header>
 
   <div class="container">
-    <div class="product">
-      <img src="https://images.unsplash.com/photo-1585386959984-a415522e3f9b?auto=format&fit=crop&w=800&q=80" alt="Kit de Maquiagem" />
-      <div class="details">
-        <h2>O kit perfeito para realçar sua beleza</h2>
-        <p>Este kit inclui tudo o que você precisa para uma maquiagem impecável: base, corretivo, sombras, batons, pincéis e muito mais. Ideal para uso pessoal ou profissional.</p>
-        <div class="price">R$ 149,90</div>
-        <button class="btn">Comprar Agora</button>
+
+    <div class="highlight">
+      <h2>Você quer empreender no ramo da beleza?</h2>
+      <p>Essa é sua chance de começar com o pé direito e fornecedores confiáveis!</p>
+    </div>
+
+    <div class="features">
+      <div class="feature">
+        <h3>📦 Fornecedores Atualizados</h3>
+        <p>Lista com os principais fornecedores de maquiagem do Brasil para 2025.</p>
+      </div>
+      <div class="feature">
+        <h3>💰 Preços Imbatíveis</h3>
+        <p>Produtos com preços acessíveis para você lucrar muito mais!</p>
+      </div>
+      <div class="feature">
+        <h3>🚀 Comece Agora</h3>
+        <p>Ideal para quem quer montar uma loja online ou revender produtos de beleza.</p>
       </div>
     </div>
+
+    <div style="text-align:center;">
+      <a class="cta" href="https://pay.kiwify.com.br/p4dBVYD" target="_blank">Quero garantir minha lista por apenas R$ 19,90</a>
+    </div>
+
+    <div class="testimonials">
+      <h2 style="text-align:center; color:#e6007e;">Depoimentos</h2>
+      <div class="testimonial">
+        <p>"Comprei a lista e consegui montar minha lojinha em menos de uma semana! Maravilhosa!"</p>
+        <strong>— Juliana M.</strong>
+      </div>
+      <div class="testimonial">
+        <p>"Os contatos são reais, preços bons mesmo! Já revendi o primeiro lote."</p>
+        <strong>— Carla V.</strong>
+      </div>
+    </div>
+
+    <div style="text-align:center; margin-top:40px;">
+      <p><strong>📌 Oferta por tempo limitado.</strong> Aproveite enquanto está disponível!</p>
+      <a class="cta" href="https://pay.kiwify.com.br/p4dBVYD" target="_blank">Comprar agora por R$ 19,90</a>
+    </div>
+
   </div>
 
   <footer>
-    &copy; 2025 Beleza Natural. Todos os direitos reservados.
+    &copy; 2025 Lista de Fornecedores de Maquiagem. Todos os direitos reservados.
   </footer>
+
 </body>
 </html>
