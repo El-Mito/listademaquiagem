@@ -6,72 +6,126 @@
   <title>Lista de Fornecedores de Maquiagem 2025</title>
   <style>
     body {
-      font-family: 'Segoe UI', sans-serif;
       margin: 0;
-      padding: 0;
-      background: #fff8f4;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom, #fff0f5, #ffe4e1);
       color: #333;
+      overflow-x: hidden;
     }
+
     header {
+      text-align: center;
+      padding: 60px 20px;
       background: #ff4f91;
       color: white;
-      padding: 40px 20px;
-      text-align: center;
+      animation: fadeIn 1.5s ease;
     }
+
     header h1 {
-      font-size: 2em;
+      font-size: 2.5em;
       margin-bottom: 10px;
     }
+
     header p {
       font-size: 1.2em;
     }
+
     .container {
-      padding: 20px;
-      max-width: 800px;
+      max-width: 900px;
       margin: auto;
+      padding: 30px 20px;
     }
-    .benefits, .testimonials {
-      margin: 30px 0;
-    }
-    .benefits ul {
-      list-style: none;
-      padding: 0;
-    }
-    .benefits li {
-      background: #ffe0ec;
-      margin: 10px 0;
-      padding: 10px;
-      border-radius: 8px;
-    }
+
     .image {
       text-align: center;
       margin: 30px 0;
     }
+
     .image img {
       max-width: 100%;
-      border-radius: 10px;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
     }
+
+    .image img:hover {
+      transform: scale(1.03);
+    }
+
+    .benefits, .testimonials {
+      margin: 40px 0;
+      animation: fadeInUp 1s ease;
+    }
+
+    .benefits h2, .testimonials h2 {
+      font-size: 1.8em;
+      margin-bottom: 20px;
+      color: #ff4f91;
+    }
+
+    .benefits ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .benefits li {
+      background: #fff;
+      margin: 10px 0;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+
+    .testimonials p {
+      background: #fff0f5;
+      padding: 15px;
+      border-left: 5px solid #ff4f91;
+      margin-bottom: 15px;
+      border-radius: 6px;
+    }
+
     .cta {
       text-align: center;
-      margin: 40px 0;
+      margin: 50px 0;
+      animation: pulse 2s infinite;
     }
+
     .cta a {
       background: #ff4f91;
       color: white;
-      padding: 15px 30px;
+      padding: 18px 40px;
+      font-size: 1.3em;
       text-decoration: none;
-      font-size: 1.2em;
-      border-radius: 8px;
-      transition: background 0.3s;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(255,79,145,0.3);
+      transition: background 0.3s ease;
     }
+
     .cta a:hover {
       background: #e03e7b;
     }
+
     footer {
       background: #fce4ec;
       text-align: center;
       padding: 20px;
       font-size: 0.9em;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+      100% { transform: scale(1); }
     }
   </style>
 </head>
@@ -79,20 +133,20 @@
 
   <header>
     <h1>Lista de Fornecedores de Maquiagem 2025</h1>
-    <p>Descubra os melhores fornecedores do Brasil com preços incríveis e comece sua loja de maquiagem hoje mesmo!</p>
+    <p>Comece sua loja de maquiagem com os melhores fornecedores do Brasil. Preço acessível e entrega imediata!</p>
   </header>
 
   <div class="container">
     <div class="image">
-      <img src="https://images.unsplash.com/photo-1618354691414-1f4b6f3f1b9e?auto=format&fit=crop&w=800&q=80" alt="Kit de maquiagem">
+      <img src="https://images.unsplash.com/photo-1618354691414-1f4b6f3f1b9e?auto=format&fit=crop&w=900&q=80" alt="Kit de maquiagem">
     </div>
 
     <section class="benefits">
-      <h2>✅ O que você vai receber:</h2>
+      <h2>✨ O que você vai receber:</h2>
       <ul>
         <li>Lista atualizada com os maiores fornecedores de maquiagem do Brasil</li>
         <li>Preços acessíveis e condições especiais para revenda</li>
-        <li>Ideal para quem quer começar a empreender no ramo da beleza</li>
+        <li>Ideal para quem quer empreender no ramo da beleza</li>
         <li>Economize tempo e dinheiro com uma curadoria pronta</li>
       </ul>
     </section>
