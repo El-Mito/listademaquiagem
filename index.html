@@ -3,579 +3,721 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lista Exclusiva de Fornecedores Maquiagem 2025 - Acesso Limitado</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <title>Luz & Arte - Designs Gospel Editáveis</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Montserrat:wght@300;400;500;600;700;800;900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Inter', sans-serif; }
-        .gradient-bg { background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%); }
-        .gradient-text { background: linear-gradient(135deg, #1e40af, #7c3aed); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-        .pulse-animation { animation: pulse 2s infinite; }
-        @keyframes pulse {
-            0%, 100% { transform: scale(1); }
-            50% { transform: scale(1.02); }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
-        .countdown { font-family: 'Courier New', monospace; }
-        .testimonial-card { transition: all 0.3s ease; }
-        .testimonial-card:hover { transform: translateY(-5px); }
-        .scarcity-bar { background: linear-gradient(90deg, #ef4444 0%, #dc2626 100%); }
+
+        :root {
+            --royal-blue: #1e40af;
+            --gold: #f59e0b;
+            --purple: #7c3aed;
+            --white: #ffffff;
+            --light-gray: #f8fafc;
+            --dark-gray: #1f2937;
+            --shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            --shadow-hover: 0 20px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: var(--dark-gray);
+            background: linear-gradient(135deg, var(--light-gray) 0%, var(--white) 100%);
+            scroll-behavior: smooth;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header Section */
+        .header {
+            text-align: center;
+            padding: 60px 0 50px;
+            background: linear-gradient(135deg, #0f172a 0%, var(--royal-blue) 30%, var(--purple) 70%, #581c87 100%);
+            color: var(--white);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: 
+                radial-gradient(circle at 20% 80%, rgba(245, 158, 11, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(124, 58, 237, 0.1) 0%, transparent 50%),
+                url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="0.8" fill="white" opacity="0.08"/><circle cx="75" cy="75" r="0.8" fill="white" opacity="0.08"/><circle cx="50" cy="10" r="0.4" fill="white" opacity="0.06"/><circle cx="10" cy="60" r="0.4" fill="white" opacity="0.06"/><circle cx="90" cy="40" r="0.4" fill="white" opacity="0.06"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+        }
+
+        .header-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .main-title {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 5.5rem;
+            font-weight: 600;
+            margin-bottom: 25px;
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
+            background: linear-gradient(45deg, var(--white), var(--gold), #fbbf24);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            letter-spacing: -0.01em;
+            font-style: italic;
+        }
+
+        .slogan {
+            font-family: 'Crimson Text', serif;
+            font-size: 1.5rem;
+            font-weight: 400;
+            opacity: 0.95;
+            max-width: 700px;
+            margin: 0 auto;
+            line-height: 1.7;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+            font-style: italic;
+            letter-spacing: 0.3px;
+        }
+
+        /* Gallery Section */
+        .gallery-section {
+            padding: 100px 0;
+            background: linear-gradient(180deg, #f8fafc 0%, var(--white) 50%, #f8fafc 100%);
+        }
+
+        .section-title {
+            text-align: center;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--royal-blue);
+            margin-bottom: 20px;
+            position: relative;
+            letter-spacing: -0.5px;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(90deg, var(--gold), #f97316);
+            border-radius: 2px;
+        }
+
+        .section-subtitle {
+            text-align: center;
+            font-family: 'Crimson Text', serif;
+            font-size: 1.2rem;
+            color: #6b7280;
+            margin-bottom: 60px;
+            font-weight: 400;
+            font-style: italic;
+            letter-spacing: 0.2px;
+        }
+
+        .gallery-container {
+            background: var(--white);
+            border-radius: 24px;
+            padding: 40px;
+            box-shadow: 
+                0 25px 50px -12px rgba(0, 0, 0, 0.08),
+                0 0 0 1px rgba(0, 0, 0, 0.05);
+            border: 2px solid transparent;
+            background-clip: padding-box;
+            position: relative;
+        }
+
+        .gallery-container::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            padding: 2px;
+            background: linear-gradient(135deg, var(--royal-blue), var(--purple), var(--gold));
+            border-radius: 24px;
+            mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+            mask-composite: xor;
+            -webkit-mask-composite: xor;
+            opacity: 0.3;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            margin-bottom: 40px;
+            position: relative;
+        }
+
+        .art-card {
+            background: var(--white);
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 
+                0 10px 25px rgba(0, 0, 0, 0.08),
+                0 4px 10px rgba(0, 0, 0, 0.03);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            border: 1px solid rgba(0, 0, 0, 0.06);
+        }
+
+        .art-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, var(--royal-blue), var(--purple));
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            z-index: 1;
+        }
+
+        .art-card:hover {
+            transform: translateY(-12px) scale(1.02);
+            box-shadow: 
+                0 25px 50px rgba(0, 0, 0, 0.15),
+                0 10px 20px rgba(30, 64, 175, 0.1);
+            border-color: rgba(30, 64, 175, 0.2);
+        }
+
+        .art-card:hover::before {
+            opacity: 0.03;
+        }
+
+        .art-image {
+            width: 100%;
+            height: 280px;
+            object-fit: cover;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            z-index: 2;
+        }
+
+        .art-card:hover .art-image {
+            transform: scale(1.08);
+            filter: brightness(1.05) saturate(1.1);
+        }
+
+        .art-info {
+            padding: 25px 20px;
+            text-align: center;
+            position: relative;
+            z-index: 3;
+            background: var(--white);
+        }
+
+        .art-title {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            font-size: 1.1rem;
+            color: var(--dark-gray);
+            margin-bottom: 18px;
+            line-height: 1.4;
+            min-height: 2.8rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            letter-spacing: 0.2px;
+        }
+
+        .edit-button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, var(--royal-blue), var(--purple));
+            color: var(--white);
+            text-decoration: none;
+            padding: 14px 28px;
+            border-radius: 30px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(30, 64, 175, 0.2);
+            letter-spacing: 0.5px;
+        }
+
+        .edit-button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.25), transparent);
+            transition: left 0.6s ease;
+        }
+
+        .edit-button::after {
+            content: '→';
+            margin-left: 8px;
+            transition: transform 0.3s ease;
+            font-size: 1.1rem;
+        }
+
+        .edit-button:hover::before {
+            left: 100%;
+        }
+
+        .edit-button:hover::after {
+            transform: translateX(3px);
+        }
+
+        .edit-button:hover {
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: 0 12px 30px rgba(30, 64, 175, 0.35);
+            background: linear-gradient(135deg, #1d4ed8, #8b5cf6);
+        }
+
+        .load-more-container {
+            text-align: center;
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 1px solid rgba(0, 0, 0, 0.08);
+        }
+
+        .load-more-btn {
+            background: linear-gradient(135deg, var(--gold), #f97316);
+            color: var(--white);
+            border: none;
+            padding: 18px 45px;
+            border-radius: 35px;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: 
+                0 8px 25px rgba(245, 158, 11, 0.25),
+                0 4px 10px rgba(0, 0, 0, 0.1);
+            position: relative;
+            overflow: hidden;
+            letter-spacing: 0.8px;
+        }
+
+        .load-more-btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: left 0.6s ease;
+        }
+
+        .load-more-btn:hover::before {
+            left: 100%;
+        }
+
+        .load-more-btn:hover {
+            transform: translateY(-4px) scale(1.05);
+            box-shadow: 
+                0 15px 35px rgba(245, 158, 11, 0.35),
+                0 8px 20px rgba(0, 0, 0, 0.15);
+            background: linear-gradient(135deg, #f59e0b, #ea580c);
+        }
+
+        .load-more-btn:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+            transform: none;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .load-more-btn:disabled:hover {
+            transform: none;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Loading Animation */
+        .loading {
+            display: none;
+            text-align: center;
+            padding: 40px;
+        }
+
+        .loading.active {
+            display: block;
+        }
+
+        .spinner {
+            width: 40px;
+            height: 40px;
+            border: 4px solid var(--light-gray);
+            border-top: 4px solid var(--royal-blue);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 20px;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1024px) {
+            .gallery-grid {
+                grid-template-columns: repeat(3, 1fr);
+                gap: 25px;
+            }
+            
+            .main-title {
+                font-size: 4rem;
+            }
+            
+            .gallery-container {
+                padding: 35px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .gallery-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 18px;
+            }
+            
+            .main-title {
+                font-size: 3.2rem;
+            }
+            
+            .slogan {
+                font-size: 1.3rem;
+            }
+            
+            .header {
+                padding: 50px 0 40px;
+            }
+            
+            .gallery-section {
+                padding: 80px 0;
+            }
+            
+            .gallery-container {
+                padding: 30px 25px;
+            }
+            
+            .art-image {
+                height: 200px;
+            }
+            
+            .section-title {
+                font-size: 2.5rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .gallery-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            
+            .main-title {
+                font-size: 2.8rem;
+            }
+            
+            .section-title {
+                font-size: 2rem;
+            }
+            
+            .container {
+                padding: 0 15px;
+            }
+            
+            .gallery-container {
+                padding: 25px 20px;
+                border-radius: 20px;
+            }
+            
+            .art-info {
+                padding: 20px 15px;
+            }
+            
+            .art-image {
+                height: 240px;
+            }
+            
+            .edit-button {
+                padding: 12px 24px;
+                font-size: 0.9rem;
+            }
+        }
+
+        /* Scroll to top button */
+        .scroll-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: linear-gradient(135deg, var(--royal-blue), var(--purple));
+            color: var(--white);
+            border: none;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            cursor: pointer;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            z-index: 1000;
+            box-shadow: var(--shadow);
+        }
+
+        .scroll-top.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .scroll-top:hover {
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-hover);
+        }
     </style>
 </head>
-<body class="gradient-bg min-h-screen">
-    <!-- Scarcity Bar -->
-    <div class="scarcity-bar text-white text-center py-3 px-4">
-        <div class="max-w-6xl mx-auto flex items-center justify-center space-x-4">
-            <span class="font-semibold">🔥 ÚLTIMAS 47 VAGAS DISPONÍVEIS</span>
-            <span class="countdown font-bold" id="countdown">23:59:42</span>
-        </div>
-    </div>
-
-    <!-- Header -->
-    <header class="text-center py-12 px-4">
-        <div class="max-w-5xl mx-auto">
-            <div class="bg-blue-50 border border-blue-200 rounded-lg p-4 mb-8 inline-block">
-                <span class="text-blue-800 font-semibold">✅ Mais de 2.847 empreendedores já garantiram acesso</span>
-            </div>
-
-            <!-- Product Images Gallery -->
-            <div class="mb-12">
-                <div class="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-5xl mx-auto">
-                    <div class="bg-white p-4 rounded-xl shadow-lg transform hover:scale-105 transition-all duration-300">
-                        <div class="w-full h-32 rounded-lg mb-3 overflow-hidden">
-                            <img src="https://images.unsplash.com/photo-1586495777744-4413f21062fa?w=400&h=300&fit=crop&crop=center" 
-                                 alt="Batons coloridos" 
-                                 class="w-full h-full object-cover"
-                                 onerror="this.src=''; this.alt='Imagem não disponível'; this.style.display='none';">
-                        </div>
-                        <p class="text-sm text-center text-gray-800 font-semibold mb-1">Batons Matte</p>
-                        <p class="text-xs text-center text-gray-600">Longa duração</p>
-                        <p class="text-xs text-center text-green-600 font-semibold">Alta margem</p>
-                    </div>
-                    
-                    <div class="bg-white p-4 rounded-xl shadow-lg transform hover:scale-105 transition-all duration-300">
-                        <div class="w-full h-32 rounded-lg mb-3 overflow-hidden">
-                            <img src="https://images.unsplash.com/photo-1512496015851-a90fb38ba796?w=400&h=300&fit=crop&crop=center" 
-                                 alt="Paleta de sombras coloridas" 
-                                 class="w-full h-full object-cover"
-                                 onerror="this.src=''; this.alt='Imagem não disponível'; this.style.display='none';">
-                        </div>
-                        <p class="text-sm text-center text-gray-800 font-semibold mb-1">Paletas de Sombra</p>
-                        <p class="text-xs text-center text-gray-600">18 cores vibrantes</p>
-                        <p class="text-xs text-center text-green-600 font-semibold">Mais vendida</p>
-                    </div>
-                    
-                    <div class="bg-white p-4 rounded-xl shadow-lg transform hover:scale-105 transition-all duration-300">
-                        <div class="w-full h-32 rounded-lg mb-3 overflow-hidden">
-                            <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=400&h=300&fit=crop&crop=center" 
-                                 alt="Base líquida e produtos para pele" 
-                                 class="w-full h-full object-cover"
-                                 onerror="this.src=''; this.alt='Imagem não disponível'; this.style.display='none';">
-                        </div>
-                        <p class="text-sm text-center text-gray-800 font-semibold mb-1">Base Líquida</p>
-                        <p class="text-xs text-center text-gray-600">Cobertura total</p>
-                        <p class="text-xs text-center text-green-600 font-semibold">Qualidade premium</p>
-                    </div>
-                    
-                    <div class="bg-white p-4 rounded-xl shadow-lg transform hover:scale-105 transition-all duration-300">
-                        <div class="w-full h-32 rounded-lg mb-3 overflow-hidden">
-                            <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=400&h=300&fit=crop&crop=center" 
-                                 alt="Kit completo de maquiagem" 
-                                 class="w-full h-full object-cover"
-                                 onerror="this.src=''; this.alt='Imagem não disponível'; this.style.display='none';">
-                        </div>
-                        <p class="text-sm text-center text-gray-800 font-semibold mb-1">Kits Completos</p>
-                        <p class="text-xs text-center text-gray-600">Tudo em um só</p>
-                        <p class="text-xs text-center text-green-600 font-semibold">Melhor custo-benefício</p>
-                    </div>
-                </div>
-                <p class="text-center text-gray-600 mt-6 text-base">
-                    <strong>✨ Produtos com maior demanda no mercado</strong><br>
-                    <span class="text-sm">Fornecedores verificados • Qualidade garantida • Estoque disponível</span>
-                </p>
-            </div>
-            
-            <h1 class="text-4xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight">
-                Lista <span class="gradient-text">EXCLUSIVA</span> dos Maiores<br>
-                Fornecedores de Maquiagem do Brasil
-            </h1>
-            
-            <div class="bg-yellow-50 border-l-4 border-yellow-400 p-6 mb-8 text-left max-w-3xl mx-auto">
-                <h2 class="text-xl font-semibold text-gray-800 mb-3">
-                    🎯 Acesso Limitado - Edição 2025
-                </h2>
-                <p class="text-gray-700 leading-relaxed">
-                    <strong>fornecedores mais confiáveis</strong> do mercado brasileiro, 
-                    incluindo preços de atacado, condições especiais de pagamento e contatos diretos para 
-                    <strong>maximizar sua margem de lucro</strong> no mercado de beleza.
-                </p>
-            </div>
-
-            <div class="flex justify-center items-center space-x-8 text-sm text-gray-600">
-                <div class="flex items-center space-x-2">
-                    <svg class="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                    </svg>
-                    <span>Fornecedores Verificados</span>
-                </div>
-                <div class="flex items-center space-x-2">
-                    <svg class="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                    </svg>
-                    <span>Preços de Atacado</span>
-                </div>
-                <div class="flex items-center space-x-2">
-                    <svg class="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                    </svg>
-                    <span>Acesso Imediato</span>
-                </div>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <h1 class="main-title">Luz & Arte</h1>
+                <p class="slogan">Designs inspiradores para sua igreja, com excelência em cada detalhe</p>
             </div>
         </div>
     </header>
 
-    <!-- Main Content -->
-    <main class="max-w-6xl mx-auto px-4 py-8">
-        <!-- Problem/Solution Section -->
-        <section class="bg-white rounded-2xl shadow-xl p-8 md:p-12 mb-12">
-            <div class="max-w-4xl mx-auto">
-                <div class="text-center mb-12">
-                    <h3 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-                        Você está perdendo <span class="text-red-600">MILHARES</span> por não ter os fornecedores certos?
-                    </h3>
-                    <p class="text-xl text-gray-600 leading-relaxed">
-                        A diferença entre <strong>lucrar R$ 500</strong> ou <strong>R$ 5.000</strong> por mês está nos fornecedores que você escolhe.
-                    </p>
-                </div>
-
-                <div class="grid md:grid-cols-2 gap-12 mb-12">
-                    <div class="bg-red-50 border-l-4 border-red-400 p-6 rounded-r-lg">
-                        <h4 class="text-xl font-bold text-red-800 mb-4">❌ SEM nossa lista você:</h4>
-                        <ul class="space-y-3 text-gray-700">
-                            <li class="flex items-start space-x-3">
-                                <span class="text-red-500 font-bold">•</span>
-                                <span>Perde semanas procurando fornecedores confiáveis</span>
-                            </li>
-                            <li class="flex items-start space-x-3">
-                                <span class="text-red-500 font-bold">•</span>
-                                <span>Paga preços inflacionados (até 300% mais caro)</span>
-                            </li>
-                            <li class="flex items-start space-x-3">
-                                <span class="text-red-500 font-bold">•</span>
-                                <span>Corre risco de ser enganado por fornecedores duvidosos</span>
-                            </li>
-                            <li class="flex items-start space-x-3">
-                                <span class="text-red-500 font-bold">•</span>
-                                <span>Tem margem de lucro baixíssima</span>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="bg-green-50 border-l-4 border-green-400 p-6 rounded-r-lg">
-                        <h4 class="text-xl font-bold text-green-800 mb-4">✅ COM nossa lista você:</h4>
-                        <ul class="space-y-3 text-gray-700">
-                            <li class="flex items-start space-x-3">
-                                <span class="text-green-500 font-bold">•</span>
-                                <span>Economiza meses de pesquisa (tudo pronto em 5 minutos)</span>
-                            </li>
-                            <li class="flex items-start space-x-3">
-                                <span class="text-green-500 font-bold">•</span>
-                                <span>Acessa preços de atacado (margem de lucro alta)</span>
-                            </li>
-                            <li class="flex items-start space-x-3">
-                                <span class="text-green-500 font-bold">•</span>
-                                <span>Trabalha apenas com fornecedores 100% verificados</span>
-                            </li>
-                            <li class="flex items-start space-x-3">
-                                <span class="text-green-500 font-bold">•</span>
-                                <span>Maximiza seus lucros desde o primeiro pedido</span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-
-            </div>
-        </section>
-
-        <!-- Testimonials Section -->
-        <section class="bg-gray-50 rounded-2xl p-8 md:p-12 mb-12">
-            <div class="max-w-5xl mx-auto">
-                <div class="text-center mb-12">
-                    <h3 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-                        Veja os resultados de quem já tem acesso
-                    </h3>
-                    <p class="text-xl text-gray-600">Mais de 2.847 empreendedores já transformaram seus negócios</p>
+    <!-- Gallery Section -->
+    <section class="gallery-section">
+        <div class="container">
+            <h2 class="section-title">Galeria de Artes Gospel</h2>
+            <p class="section-subtitle">Designs profissionais e editáveis para transformar a comunicação da sua igreja</p>
+            
+            <div class="gallery-container">
+                <div class="gallery-grid" id="galleryGrid">
+                    <!-- Arts will be loaded here dynamically -->
                 </div>
                 
-                <div class="grid md:grid-cols-3 gap-8">
-                    <div class="testimonial-card bg-white p-6 rounded-xl shadow-lg">
-                        <div class="flex items-center mb-4">
-                            <div class="w-12 h-12 bg-pink-100 rounded-full flex items-center justify-center mr-4">
-                                <span class="text-pink-600 font-bold">MC</span>
-                            </div>
-                            <div>
-                                <h4 class="font-semibold text-gray-900">Maria Clara</h4>
-                                <p class="text-sm text-gray-600">São Paulo, SP</p>
-                            </div>
-                        </div>
-                        <div class="text-yellow-400 mb-3">⭐⭐⭐⭐⭐</div>
-                        <p class="text-gray-700 italic mb-4">
-                            "Em 2 meses saí do zero para R$ 8.500 de faturamento mensal. Os fornecedores são realmente confiáveis e os preços incríveis!"
-                        </p>
-                        <div class="text-sm text-green-600 font-semibold">
-                            Resultado: R$ 8.500/mês em 60 dias
-                        </div>
-                    </div>
-
-                    <div class="testimonial-card bg-white p-6 rounded-xl shadow-lg">
-                        <div class="flex items-center mb-4">
-                            <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4">
-                                <span class="text-blue-600 font-bold">RS</span>
-                            </div>
-                            <div>
-                                <h4 class="font-semibold text-gray-900">Rafael Santos</h4>
-                                <p class="text-sm text-gray-600">Rio de Janeiro, RJ</p>
-                            </div>
-                        </div>
-                        <div class="text-yellow-400 mb-3">⭐⭐⭐⭐⭐</div>
-                        <p class="text-gray-700 italic mb-4">
-                            "Economizei mais de R$ 3.000 só no primeiro pedido! A margem de lucro que consegui foi surreal. Recomendo demais!"
-                        </p>
-                        <div class="text-sm text-green-600 font-semibold">
-                            Economia: R$ 3.000 no 1º pedido
-                        </div>
-                    </div>
-
-                    <div class="testimonial-card bg-white p-6 rounded-xl shadow-lg">
-                        <div class="flex items-center mb-4">
-                            <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mr-4">
-                                <span class="text-purple-600 font-bold">AL</span>
-                            </div>
-                            <div>
-                                <h4 class="font-semibold text-gray-900">Ana Luiza</h4>
-                                <p class="text-sm text-gray-600">Belo Horizonte, MG</p>
-                            </div>
-                        </div>
-                        <div class="text-yellow-400 mb-3">⭐⭐⭐⭐⭐</div>
-                        <p class="text-gray-700 italic mb-4">
-                            "Estava perdida sem saber por onde começar. Com a lista, em 1 semana já tinha meu primeiro estoque e primeiras vendas!"
-                        </p>
-                        <div class="text-sm text-green-600 font-semibold">
-                            Primeira venda em 7 dias
-                        </div>
-                    </div>
-                </div>
-
-
-            </div>
-        </section>
-
-        <!-- Price and CTA Section -->
-        <section class="bg-white rounded-2xl shadow-2xl p-8 md:p-12 text-center border-4 border-yellow-400">
-            <div class="max-w-3xl mx-auto">
-                <div class="bg-red-600 text-white py-2 px-6 rounded-full inline-block mb-6">
-                    <span class="font-bold">🚨 ÚLTIMAS HORAS - PREÇO PROMOCIONAL</span>
+                <div class="loading" id="loading">
+                    <div class="spinner"></div>
+                    <p>Carregando mais artes...</p>
                 </div>
                 
-                <h3 class="text-3xl md:text-4xl font-bold text-gray-900 mb-8">
-                    Investimento que se paga em <span class="text-green-600">1 único pedido</span>
-                </h3>
-
-                <div class="bg-gray-50 rounded-2xl p-8 mb-8">
-                    <div class="grid md:grid-cols-2 gap-8 mb-8">
-                        <div class="text-center">
-                            <h4 class="text-xl font-bold text-gray-800 mb-4">💸 Valor Normal</h4>
-                            <div class="text-4xl font-bold text-gray-400 line-through mb-2">R$ 199,90</div>
-                            <p class="text-sm text-gray-600">Preço que você pagaria.</p>
-                        </div>
-                        <div class="text-center">
-                            <h4 class="text-xl font-bold text-green-800 mb-4">🎯 Hoje Apenas</h4>
-                            <div class="text-6xl font-bold text-green-600 mb-2">R$ 19,90</div>
-                            <p class="text-sm text-green-600 font-semibold">96% de desconto - Por tempo limitado</p>
-                        </div>
-                    </div>
-
-
+                <div class="load-more-container">
+                    <button class="load-more-btn" id="loadMoreBtn" onclick="loadMoreArts()">
+                        Carregar Mais Artes
+                    </button>
                 </div>
-
-                <div class="pulse-animation mb-8">
-                    <a href="https://pay.kiwify.com.br/p4dBVYD" 
-                       class="inline-block bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white font-bold text-2xl px-16 py-6 rounded-full shadow-2xl transform transition-all duration-300 hover:scale-105 border-4 border-green-300">
-                        🚀 GARANTIR ACESSO AGORA - R$ 19,90
-                    </a>
-                </div>
-
-                <!-- Guarantee Seal -->
-                <div class="mb-8">
-                    <div class="bg-gradient-to-r from-green-50 to-blue-50 border-2 border-green-300 rounded-2xl p-6 max-w-md mx-auto">
-                        <div class="text-center">
-                            <div class="w-20 h-20 bg-gradient-to-br from-green-400 to-green-600 rounded-full mx-auto mb-4 flex items-center justify-center shadow-lg">
-                                <svg class="w-10 h-10 text-white" fill="currentColor" viewBox="0 0 24 24">
-                                    <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/>
-                                    <path d="M10 17l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z" fill="white"/>
-                                </svg>
-                            </div>
-                            <h4 class="text-lg font-bold text-green-800 mb-2">🛡️ GARANTIA TOTAL</h4>
-                            <p class="text-green-700 font-semibold mb-2">7 DIAS PARA TESTAR</p>
-                            <p class="text-sm text-gray-600">
-                                Se não ficar 100% satisfeito, devolvemos seu dinheiro sem perguntas!
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="grid md:grid-cols-4 gap-4 text-sm text-gray-600 mb-8">
-                    <div class="flex items-center justify-center space-x-2">
-                        <svg class="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                        </svg>
-                        <span>Pagamento 100% Seguro</span>
-                    </div>
-                    <div class="flex items-center justify-center space-x-2">
-                        <svg class="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M13 10V3L4 14h7v7l9-11h-7z"/>
-                        </svg>
-                        <span>Acesso em 2 Minutos</span>
-                    </div>
-                    <div class="flex items-center justify-center space-x-2">
-                        <svg class="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
-                        </svg>
-                        <span>Garantia de 7 Dias</span>
-                    </div>
-                    <div class="flex items-center justify-center space-x-2">
-                        <svg class="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                        </svg>
-                        <span>Suporte Especializado</span>
-                    </div>
-                </div>
-
-                <div class="bg-red-50 border border-red-200 rounded-lg p-6">
-                    <h4 class="text-lg font-bold text-red-800 mb-2">
-                        ⚠️ ATENÇÃO: Oferta por tempo limitado
-                    </h4>
-                    <p class="text-red-700">
-                        Após <span class="font-bold countdown" id="countdown-bottom">23:59:42</span> o preço volta para R$ 199,90. 
-                        <strong>Não perca esta oportunidade única!</strong>
-                    </p>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <!-- Footer with Urgency -->
-    <footer class="bg-gradient-to-r from-gray-800 to-gray-900 text-white text-center py-12 mt-12">
-        <div class="max-w-4xl mx-auto px-4">
-            <div class="bg-red-600 text-white py-3 px-8 rounded-full inline-block mb-6">
-                <div class="text-xl md:text-2xl font-bold animate-pulse">
-                    🔥 ÚLTIMAS <span id="spots-remaining">47</span> VAGAS DISPONÍVEIS
-                </div>
-            </div>
-            
-            <h4 class="text-2xl md:text-3xl font-bold mb-4">
-                Não deixe para amanhã o que pode transformar sua vida hoje!
-            </h4>
-            
-            <p class="text-lg md:text-xl mb-6 text-gray-300">
-                Mais de <strong>2.847 empreendedores</strong> já garantiram acesso e estão faturando alto.<br>
-                <strong>Seja o próximo!</strong>
-            </p>
-
-            <div class="pulse-animation mb-8">
-                <a href="https://pay.kiwify.com.br/p4dBVYD" 
-                   class="inline-block bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white font-bold text-xl px-12 py-4 rounded-full shadow-2xl transform transition-all duration-300 hover:scale-105">
-                    💳 GARANTIR MINHA VAGA AGORA
-                </a>
-            </div>
-            
-            <div class="text-sm text-gray-400 border-t border-gray-700 pt-6">
-                <p>© 2025 Lista Exclusiva Fornecedores. Todos os direitos reservados.</p>
-                <p class="mt-2">Este produto é comercializado com apoio da Kiwify. Pagamento 100% seguro.</p>
             </div>
         </div>
-    </footer>
+    </section>
 
-    <!-- Purchase Notifications -->
-    <div id="purchase-notifications" class="fixed top-20 left-4 z-50 space-y-2"></div>
+    <!-- Scroll to top button -->
+    <button class="scroll-top" id="scrollTop" onclick="scrollToTop()">
+        ↑
+    </button>
 
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            // Purchase notifications system
-            const notifications = [
-                { name: "Maria Silva", city: "São Paulo, SP", time: "2 minutos atrás" },
-                { name: "João Santos", city: "Rio de Janeiro, RJ", time: "5 minutos atrás" },
-                { name: "Ana Costa", city: "Belo Horizonte, MG", time: "8 minutos atrás" },
-                { name: "Carlos Lima", city: "Salvador, BA", time: "12 minutos atrás" },
-                { name: "Fernanda Oliveira", city: "Brasília, DF", time: "15 minutos atrás" },
-                { name: "Roberto Alves", city: "Curitiba, PR", time: "18 minutos atrás" },
-                { name: "Juliana Pereira", city: "Fortaleza, CE", time: "22 minutos atrás" },
-                { name: "Pedro Rodrigues", city: "Porto Alegre, RS", time: "25 minutos atrás" },
-                { name: "Camila Ferreira", city: "Recife, PE", time: "28 minutos atrás" },
-                { name: "Lucas Martins", city: "Goiânia, GO", time: "32 minutos atrás" }
-            ];
+        // Sample data structure - you can replace this with your actual data
+        let allArts = [
+            {
+                image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=300&fit=crop&crop=center",
+                title: "Arte Gospel - Louvor e Adoração",
+                editLink: "https://canva.com/edit-link-1"
+            },
+            {
+                image: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=400&h=300&fit=crop&crop=center",
+                title: "Design Inspiracional - Fé",
+                editLink: "https://canva.com/edit-link-2"
+            },
+            {
+                image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=300&fit=crop&crop=center",
+                title: "Arte para Culto Dominical",
+                editLink: "https://canva.com/edit-link-3"
+            },
+            {
+                image: "https://images.unsplash.com/photo-1518837695005-2083093ee35b?w=400&h=300&fit=crop&crop=center",
+                title: "Template Versículo Bíblico",
+                editLink: "https://canva.com/edit-link-4"
+            },
+            {
+                image: "https://images.unsplash.com/photo-1441716844725-09cedc13a4e7?w=400&h=300&fit=crop&crop=center",
+                title: "Design para Eventos Gospel",
+                editLink: "https://canva.com/edit-link-5"
+            },
+            {
+                image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=300&fit=crop&crop=center",
+                title: "Arte Motivacional Cristã",
+                editLink: "https://canva.com/edit-link-6"
+            },
+            {
+                image: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=400&h=300&fit=crop&crop=center",
+                title: "Template para Pregação",
+                editLink: "https://canva.com/edit-link-7"
+            },
+            {
+                image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=300&fit=crop&crop=center",
+                title: "Design para Redes Sociais",
+                editLink: "https://canva.com/edit-link-8"
+            },
+            {
+                image: "https://images.unsplash.com/photo-1518837695005-2083093ee35b?w=400&h=300&fit=crop&crop=center",
+                title: "Arte para Ministério Jovem",
+                editLink: "https://canva.com/edit-link-9"
+            },
+            {
+                image: "https://images.unsplash.com/photo-1441716844725-09cedc13a4e7?w=400&h=300&fit=crop&crop=center",
+                title: "Template Convite Gospel",
+                editLink: "https://canva.com/edit-link-10"
+            },
+            {
+                image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=300&fit=crop&crop=center",
+                title: "Design para Conferência",
+                editLink: "https://canva.com/edit-link-11"
+            },
+            {
+                image: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=400&h=300&fit=crop&crop=center",
+                title: "Arte Devocional Diário",
+                editLink: "https://canva.com/edit-link-12"
+            }
+        ];
 
-            function showPurchaseNotification() {
-                const notification = notifications[Math.floor(Math.random() * notifications.length)];
-                const notificationEl = document.createElement('div');
-                notificationEl.className = 'bg-white border-l-4 border-green-500 rounded-lg shadow-lg p-4 max-w-sm transform translate-x-[-100%] transition-all duration-500 ease-out';
+        let currentIndex = 0;
+        const artsPerLoad = 9;
+
+        // Function to add arts to the data array
+        function addArt(imageUrl, title, editLink) {
+            allArts.push({
+                image: imageUrl,
+                title: title,
+                editLink: editLink
+            });
+        }
+
+        // Function to create art card HTML
+        function createArtCard(art) {
+            return `
+                <div class="art-card">
+                    <img src="${art.image}" alt="${art.title}" class="art-image" 
+                         onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDIwMCAyMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIiBmaWxsPSIjRjNGNEY2Ii8+CjxwYXRoIGQ9Ik0xMDAgNzBMMTMwIDEzMEg3MEwxMDAgNzBaIiBmaWxsPSIjOUI5QkEwIi8+CjxjaXJjbGUgY3g9IjEyMCIgY3k9IjgwIiByPSI4IiBmaWxsPSIjOUI5QkEwIi8+Cjx0ZXh0IHg9IjEwMCIgeT0iMTYwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjOUI5QkEwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiPkltYWdlbSBuw6NvIGVuY29udHJhZGE8L3RleHQ+Cjwvc3ZnPg=='; this.alt='Imagem não encontrada';">
+                    <div class="art-info">
+                        <h3 class="art-title">${art.title}</h3>
+                        <a href="${art.editLink}" target="_blank" class="edit-button">
+                            Editar no Canva
+                        </a>
+                    </div>
+                </div>
+            `;
+        }
+
+        // Function to load more arts
+        function loadMoreArts() {
+            const loading = document.getElementById('loading');
+            const loadMoreBtn = document.getElementById('loadMoreBtn');
+            const galleryGrid = document.getElementById('galleryGrid');
+
+            // Show loading animation
+            loading.classList.add('active');
+            loadMoreBtn.disabled = true;
+
+            // Simulate loading delay
+            setTimeout(() => {
+                const endIndex = Math.min(currentIndex + artsPerLoad, allArts.length);
                 
-                notificationEl.innerHTML = `
-                    <div class="flex items-center space-x-3">
-                        <div class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center">
-                            <svg class="w-5 h-5 text-green-600" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                            </svg>
-                        </div>
-                        <div class="flex-1">
-                            <p class="text-sm font-semibold text-gray-900">${notification.name}</p>
-                            <p class="text-xs text-gray-600">${notification.city}</p>
-                            <p class="text-xs text-green-600 font-medium">Acabou de garantir acesso!</p>
-                        </div>
-                        <div class="text-xs text-gray-500">${notification.time}</div>
+                for (let i = currentIndex; i < endIndex; i++) {
+                    const artCard = document.createElement('div');
+                    artCard.innerHTML = createArtCard(allArts[i]);
+                    galleryGrid.appendChild(artCard.firstElementChild);
+                }
+
+                currentIndex = endIndex;
+
+                // Hide loading animation
+                loading.classList.remove('active');
+                loadMoreBtn.disabled = false;
+
+                // Hide load more button if all arts are loaded
+                if (currentIndex >= allArts.length) {
+                    loadMoreBtn.style.display = 'none';
+                }
+
+                // Update button text
+                const remaining = allArts.length - currentIndex;
+                if (remaining > 0) {
+                    loadMoreBtn.textContent = `Carregar Mais Artes (${remaining} restantes)`;
+                }
+            }, 1000);
+        }
+
+        // Function to initialize the gallery
+        function initializeGallery() {
+            if (allArts.length === 0) {
+                // Show message when no arts are available
+                document.getElementById('galleryGrid').innerHTML = `
+                    <div style="grid-column: 1 / -1; text-align: center; padding: 60px 20px; color: #6B7280;">
+                        <h3 style="font-size: 1.5rem; margin-bottom: 10px;">Galeria em Preparação</h3>
+                        <p>As artes serão carregadas em breve. Aguarde!</p>
                     </div>
                 `;
-
-                const container = document.getElementById('purchase-notifications');
-                container.appendChild(notificationEl);
-
-                // Animate in
-                setTimeout(() => {
-                    notificationEl.style.transform = 'translateX(0)';
-                }, 100);
-
-                // Animate out and remove
-                setTimeout(() => {
-                    notificationEl.style.transform = 'translateX(-100%)';
-                    setTimeout(() => {
-                        if (notificationEl.parentNode) {
-                            notificationEl.parentNode.removeChild(notificationEl);
-                        }
-                    }, 500);
-                }, 4000);
+                document.getElementById('loadMoreBtn').style.display = 'none';
+                return;
             }
 
-            // Show first notification after 3 seconds
-            setTimeout(showPurchaseNotification, 3000);
-            
-            // Then show notifications every 8-15 seconds
-            setInterval(() => {
-                if (Math.random() < 0.7) { // 70% chance
-                    showPurchaseNotification();
-                }
-            }, Math.random() * 7000 + 8000); // Between 8-15 seconds
-            // Countdown timer functionality
-            function updateCountdown() {
-                const countdownElements = document.querySelectorAll('#countdown, #countdown-bottom');
-                const now = new Date().getTime();
-                const endTime = now + (24 * 60 * 60 * 1000); // 24 hours from now
-                
-                function tick() {
-                    const currentTime = new Date().getTime();
-                    const timeLeft = endTime - currentTime;
-                    
-                    if (timeLeft > 0) {
-                        const hours = Math.floor(timeLeft / (1000 * 60 * 60));
-                        const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
-                        const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
-                        
-                        const timeString = `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
-                        
-                        countdownElements.forEach(el => {
-                            if (el) el.textContent = timeString;
-                        });
-                    } else {
-                        countdownElements.forEach(el => {
-                            if (el) el.textContent = '00:00:00';
-                        });
-                    }
-                }
-                
-                tick();
-                setInterval(tick, 1000);
-            }
-            
-            updateCountdown();
-            
-            // Spots remaining animation
-            function updateSpotsRemaining() {
-                const spotsElement = document.getElementById('spots-remaining');
-                if (spotsElement) {
-                    let currentSpots = 47;
-                    setInterval(() => {
-                        if (Math.random() < 0.1 && currentSpots > 15) { // 10% chance every interval
-                            currentSpots--;
-                            spotsElement.textContent = currentSpots;
-                            
-                            // Flash effect
-                            spotsElement.style.color = '#fbbf24';
-                            setTimeout(() => {
-                                spotsElement.style.color = 'white';
-                            }, 500);
-                        }
-                    }, 30000); // Check every 30 seconds
-                }
-            }
-            
-            updateSpotsRemaining();
-            
-            // Enhanced CTA button interactions
-            const ctaButtons = document.querySelectorAll('a[href*="kiwify"]');
-            ctaButtons.forEach(button => {
-                button.addEventListener('click', function(e) {
-                    // Add click animation
-                    this.style.transform = 'scale(0.95)';
-                    setTimeout(() => {
-                        this.style.transform = 'scale(1)';
-                    }, 150);
-                });
-                
-                // Add hover sound effect simulation
-                button.addEventListener('mouseenter', function() {
-                    this.style.boxShadow = '0 20px 40px rgba(34, 197, 94, 0.4)';
-                });
-                
-                button.addEventListener('mouseleave', function() {
-                    this.style.boxShadow = '0 10px 25px rgba(0, 0, 0, 0.2)';
-                });
-            });
-            
-            // Scroll-triggered animations
-            const observerOptions = {
-                threshold: 0.1,
-                rootMargin: '0px 0px -50px 0px'
-            };
+            // Load first batch of arts
+            loadMoreArts();
+        }
 
-            const observer = new IntersectionObserver(function(entries) {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.style.opacity = '1';
-                        entry.target.style.transform = 'translateY(0)';
-                    }
-                });
-            }, observerOptions);
+        // Scroll to top functionality
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
 
-            // Apply animations to sections
-            document.querySelectorAll('section').forEach(section => {
-                section.style.opacity = '0';
-                section.style.transform = 'translateY(30px)';
-                section.style.transition = 'all 0.8s ease-out';
-                observer.observe(section);
-            });
-            
-            // Add testimonial hover effects
-            document.querySelectorAll('.testimonial-card').forEach(card => {
-                card.addEventListener('mouseenter', function() {
-                    this.style.transform = 'translateY(-10px) scale(1.02)';
-                    this.style.boxShadow = '0 20px 40px rgba(0, 0, 0, 0.1)';
-                });
-                
-                card.addEventListener('mouseleave', function() {
-                    this.style.transform = 'translateY(0) scale(1)';
-                    this.style.boxShadow = '0 10px 25px rgba(0, 0, 0, 0.1)';
-                });
-            });
+        // Show/hide scroll to top button
+        window.addEventListener('scroll', () => {
+            const scrollTop = document.getElementById('scrollTop');
+            if (window.pageYOffset > 300) {
+                scrollTop.classList.add('visible');
+            } else {
+                scrollTop.classList.remove('visible');
+            }
         });
+
+        // Initialize gallery when page loads
+        document.addEventListener('DOMContentLoaded', initializeGallery);
+
+        // Example function to add arts (you can call this to add your arts)
+        function loadArtsData() {
+            // Example of how to add arts - replace with your actual data
+            // addArt("https://example.com/image1.jpg", "Arte Gospel 1", "https://canva.com/edit1");
+            // addArt("https://example.com/image2.jpg", "Arte Gospel 2", "https://canva.com/edit2");
+            
+            // After adding all arts, reinitialize the gallery
+            currentIndex = 0;
+            document.getElementById('galleryGrid').innerHTML = '';
+            document.getElementById('loadMoreBtn').style.display = 'block';
+            initializeGallery();
+        }
     </script>
-<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'969fd232306b27e3',t:'MTc1NDMyOTAyOS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'96b0e85150f42800',t:'MTc1NDUwODE5My4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
